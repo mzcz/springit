@@ -48,38 +48,6 @@ public class Link extends Auditable {
         comments.add(comment);
     }
 
-    public Long getId() {
-        return id;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public String getUrl() {
-        return url;
-    }
-
-    public List<Comment> getComments() {
-        return comments;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public void setUrl(String url) {
-        this.url = url;
-    }
-
-    public void setComments(List<Comment> comments) {
-        this.comments = comments;
-    }
-
     public String getDomainName() throws URISyntaxException {
         URI uri = new URI(this.url);
         String domain = uri.getHost();
